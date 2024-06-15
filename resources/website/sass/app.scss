@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./font.scss";
+@import "./variable.scss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+html,
+body {
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: $color-secondary;
+    color: $color-white;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-yellow;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-secondary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: $color-primary;
+}
+
